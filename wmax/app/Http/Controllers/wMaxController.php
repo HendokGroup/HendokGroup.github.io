@@ -41,7 +41,7 @@ class wMaxController extends Controller
     public function testMssqlConnection()
     {
         try {
-            $results = DB::connection('sqlsrv')->select('SELECT 1');
+            $results = DB::connection('sqlsrv')->select("SELECT 'Kian cant code'");
             dd($results);
         } catch (\Exception $e) {
             dd($e->getMessage());
