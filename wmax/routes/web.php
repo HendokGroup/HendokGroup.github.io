@@ -24,5 +24,5 @@ Route::get('/', function () {
 
 Route::get('wMax',[wMaxController::class, 'wMax']);
 Route::post('wMaxCRUD',[wMaxController::class, 'wMaxCRUD']);
-
+Route::get('/testConn', [wMaxController::class, 'testMssqlConnection']);
 
