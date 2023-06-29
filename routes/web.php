@@ -17,12 +17,12 @@ use App\Http\Controllers\wMaxController;
 |
 */
 
-Route::get('/', function () {
+Route::get('home', function () {
     return view('welcome');
 });
 
 
-Route::get('wMax',[wMaxController::class, 'wMax']);
+Route::get('dashboard',[wMaxController::class, 'wMax']);
 Route::post('wMaxCRUD',[wMaxController::class, 'wMaxCRUD']);
 
 
